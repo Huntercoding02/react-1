@@ -8,7 +8,7 @@ function Home() {
 
   const getData = async () => {
     const dataVacation = await axios.get(
-      `http://localhost:4001/trips?keywords=${resultVacation}`
+      `https://react-1-server.vercel.app/trips?keywords=${resultVacation}`
     );
     setSearchVacation(dataVacation.data.data);
     console.log(dataVacation.data.data);
